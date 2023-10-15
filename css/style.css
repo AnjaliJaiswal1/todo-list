@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /* width: 100%; */
+    padding: 10px;
+    background: linear-gradient(135deg, #0d1321, #3e5c76);
+
+}
+
+.main-container {
+    max-width: 540px;
+    background: whitesmoke;
+    color: black;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+}
+
+.main-container .add {
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-left: 20px;
+
+}
+
+.add input {
+    outline: 0;
+    border: 0;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.add button {
+    outline: none;
+    border: none;
+    background: red;
+    padding: 16px 50px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    border: 1px solid black;
+    width: 28px;
+    border-radius: 50%;
+    background-position: center;
+    left: 400px;
+    top: 29%;
+
+}
+
+ul li.checked::before {
+    background: red;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+ul li span:hover{
+    background-color: #3e5c76;
+}
